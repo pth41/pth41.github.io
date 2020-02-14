@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "Tech-Blog"
 title_separator          : "-"
-name                     : "PTH"
+name                     : "pth41"
 description              : "An amazing website."
-url                      : "https://mmistakes.github.io" # the base hostname & protocol for your site e.g. 
+url                      : "https://pth41.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g.
 repository               : pth41/pth41.github.io # GitHub username/repo-name e.g.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
