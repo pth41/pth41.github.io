@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -20,9 +20,9 @@ title                    : "Tech-Blog"
 title_separator          : "-"
 name                     : "PTH"
 description              : "An amazing website."
-url                      : "https://pth41.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : /test # the subpath of your site, e.g. "/blog"
-repository               : imreplay/test # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://mmistakes.github.io" # the base hostname & protocol for your site e.g. 
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g.
+repository               : pth41/pth41.github.io # GitHub username/repo-name e.g.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
