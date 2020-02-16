@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : &name "TaeHee-Park"
 description              : &description "TaeHee's Bolg"
 url                      : "https://pth41.github.io" # the base hostname & protocol for your site e.g. 
-baseurl                  : "/pth41.github.io" # the subpath of your site, e.g.
+baseurl                  : "" # the subpath of your site, e.g.
 repository               : "pth41/pth41.github.io" # GitHub username/repo-name e.g.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/images/javacoding.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부하는 곳"
+  bio              : "무엇을 모르는지 알자"
   location         : "South Korea"
   email            : "qkrxogml41@naver.com"
   uri              :

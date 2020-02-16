@@ -1,31 +1,32 @@
 ---
-layout: splash
+layout: home
+author_profile: true
 permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
 excerpt: >
  TaeHee's Blog<br />
-  
+
 feature_row:
-  - image_path:
-    alt: "Portfolio1"
-    title: "Portfolio1"
-    excerpt: "Portfolio1"
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "Empty"
+    title: "Empty"
+    excerpt: "Empty"
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Read more"
-  - image_path: 
-    alt: "Portfolio2"
-    title: "Portfolio2"
-    excerpt: "Portfolio2"
+  - image_path: /assets/images/mm-responsive-feature.png
+    alt: "Empty"
+    title: "Empty"
+    excerpt: "Empty"
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Read more"
-  - image_path: 
-    alt: "Portfolio3"
-    title: "Portfolio3"
-    excerpt: "Portfolio3"
+  - image_path: /assets/images/mm-free-feature.png
+    alt: "Empty"
+    title: "Empty"
+    excerpt: "Empty"
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Read more"      
