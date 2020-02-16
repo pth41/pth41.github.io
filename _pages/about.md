@@ -5,7 +5,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
 excerpt: >
- me<br />
+ 소 개<br />
 layouts_gallery:
   - url: /assets/images/github.png
     image_path: /assets/images/github.png
@@ -39,3 +39,6 @@ GitHub Page 서비스와 Jekyll를 이용해서 만든 블로그입니다.
     - 2차 사업모델검증 최우수상 수상(2017.02)
 - 창업진흥원의 공동창업대학(대학창업 공동아카데미) 1년 이수  
   (1학기 : 모의창업실습, 2학기 : 벤처창업실전과정) [33주 (368시간)]
+
+
+## 

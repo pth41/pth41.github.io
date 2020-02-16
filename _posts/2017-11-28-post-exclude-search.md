@@ -1,5 +1,5 @@
 ---
-title:  "Exclude Post from Search Index"
+title:  "Test Post"
 search: false
 categories: 
   - Jekyll

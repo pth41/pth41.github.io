@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Tech-Blog"
+title                    : "TecH-Blog"
 title_separator          : "-"
 name                     : &name "TaeHee-Park"
 description              : &description "TaeHee's Bolg"
