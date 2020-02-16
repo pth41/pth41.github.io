@@ -1,10 +1,16 @@
 # main links
 main:
+  - title: "Home"
+    url: "/"
   - title: "About" # 네비게이션 바에 표시 되는 이름
     url: "/about/" # 클릭시 이동할 URL
   - title: "Category"
-    url: /categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+    url: "/categories/"
+  - title: "Tags"
+    url: "/tags/"
+  - title: "Post"
+    url: "/posts/"
+  - title: "Portfolio"
+    url: "/portfolio/"
   # - title: "Sitemap"
   #   url: /sitemap

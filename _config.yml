@@ -18,11 +18,11 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "Tech-Blog"
 title_separator          : "-"
-name                     : "pth41"
-description              : "An amazing website."
+name                     : &name "TaeHee-Park"
+description              : &description "TaeHee's Bolg"
 url                      : "https://pth41.github.io" # the base hostname & protocol for your site e.g. 
-baseurl                  : "" # the subpath of your site, e.g.
-repository               : pth41/pth41.github.io # GitHub username/repo-name e.g.
+baseurl                  : "/blog" # the subpath of your site, e.g.
+repository               : "pth41/pth41.github.io" # GitHub username/repo-name e.g.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -58,9 +58,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -100,9 +100,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "TaeHee-Park"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "CeAnt"
+  name             : *name
+  avatar           : "/assets/images/javacoding.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "공부하는 곳"
   location         : "South Korea"
   email            : "qkrxogml41@naver.com"
   uri              :
@@ -111,9 +111,9 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 
   foursquare       :
-  github           :
+  github           : "pth41"
   gitlab           :
   google_plus      :
   keybase          :
@@ -131,6 +131,12 @@ author:
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/pth41"
 
 # Reading Files
 include:
@@ -160,8 +166,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -198,11 +202,14 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate_path: /blog/page:num/
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 #Collections
 collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -290,7 +297,12 @@ defaults:
       layout: single
       author_profile: false
       share: true
-
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
 
 # Settings for builing master branch with travis-ci
 # with jekyll-travis
