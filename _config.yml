@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : "/assets/images/ant.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/ant.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "무엇을 모르는지 알자"
   location         : "South Korea"
   email            : "qkrxogml41@naver.com"
