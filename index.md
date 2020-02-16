@@ -4,7 +4,7 @@ author_profile: true
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: "/assets/images/server.jpg"
 excerpt: >
  TaeHee's Blog<br />
 

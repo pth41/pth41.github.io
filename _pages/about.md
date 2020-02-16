@@ -3,9 +3,9 @@ permalink: /about/
 title: "About"
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/question-mark.jpg
 excerpt: >
- 소 개<br />
+ 소개<br />
 layouts_gallery:
   - url: /assets/images/github.png
     image_path: /assets/images/github.png
@@ -22,6 +22,10 @@ toc: true
 
 TaeHee's Blog에 오신 것을 환영합니다.
 -------
+- 박태희  
+  - 1993.06.07  
+  - 금오공과대학교 컴퓨터공학과 졸업  
+  
 GitHub Page 서비스와 Jekyll를 이용해서 만든 블로그입니다.  
 테마는 Minimal Mistakes를 사용했습니다.
 
@@ -30,7 +34,6 @@ GitHub Page 서비스와 Jekyll를 이용해서 만든 블로그입니다.
 
 ## Career
 
-- 금오공과대학교 컴퓨터공학과 졸업
 - 렌탈 중개 서비스(VILLAGE) 기획,  MVP 제작 참여
   - 금오공과대학교 공학교육혁신센터 창업캠프대회 은상 수상(2016.12)
   - 구미전자정보기술원(GERI) 스마트창작터  
@@ -41,4 +44,6 @@ GitHub Page 서비스와 Jekyll를 이용해서 만든 블로그입니다.
   (1학기 : 모의창업실습, 2학기 : 벤처창업실전과정) [33주 (368시간)]
 
 
-## 
+## Learned
+
+- C, C++, C#, Java, SQL, HTML, CSS, JavaScript, JQuery, JSP

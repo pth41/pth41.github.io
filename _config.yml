@@ -12,7 +12,7 @@
 
 theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : "/assets/images/javacoding.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/ant.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "무엇을 모르는지 알자"
   location         : "South Korea"
   email            : "qkrxogml41@naver.com"
@@ -111,13 +111,13 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : 
+  facebook         : "pth41"
   foursquare       :
   github           : "pth41"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "ptaehee41"
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
@@ -137,6 +137,12 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/pth41"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/pth41"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/ptaehee41"
 
 # Reading Files
 include:
