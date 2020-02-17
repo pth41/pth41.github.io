@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "TecH-Blog"
+title                    : "TH-Blog"
 title_separator          : "-"
 name                     : &name "TaeHee-Park"
-description              : &description "TaeHee's Bolg"
+description              : "Dev-Blog"
 url                      : "https://pth41.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : "" # the subpath of your site, e.g.
 repository               : "pth41/pth41.github.io" # GitHub username/repo-name e.g.

@@ -1,0 +1,85 @@
+---
+title:  "서블릿 기본 정리"
+search: true
+categories: 
+  - Servlet
+tags:
+  - servlet
+  - web
+  - server
+  - java
+last_modified_at: 2020-02-17T08:06:00-05:00
+---
+
+## 서블릿 작성
+`javax.servlet.Servlet` 인터페이스를 통해 구현  
+서블릿 컨테이너가 서블릿에 호출할 메서드를 정의한 것이 Servlet 인터페이스  
+- 서블릿의 생명주기 관련 메서드  
+  - `init()` : 서블릿 컨테이너가 서블릿을 생성한 후 초기화 작업을 수행하기 위해 호출 -> 클라이언트 요청 처리 전 준비 작업 작성
+  - `service()` : 클라이언트가 요청할 때 마다 호출되는 메서드 -> 서블릿이 해야 할 일 작성
+  - `destroy()` : 서블릿 컨테이너가 종료되거나 웹 앱이 멈출 때, 또는 해당 서블릿을 비 활성화 시킬 때 호출 -> 확보한 자원을 해제하거나 데이터를 저장하는 등 마무리 작업 작성
+- 기타 메서드  
+  - `getServletConfig()` : 서블릿 설정 정보를 다루는 `ServletConfig` 객체 반환 -> 서블릿 이름과 초기 매개변수 값, 환경정보
+  - `getServletInfo()` : 문자열을 반환 -> 서블릿을 작성한 사람에 대한 정보나 서블릿 버번, 권리 등
+
+## 서블릿 배치 정보 작성
+`web.xml`에 서블릿 배치 정보를 작성한다.  
+
+`<servlet>`태그를 사용하여 서블릿 별명과 서블릿 클래스명을 설정
+
+```yaml
+<!-- 서블릿 등록 -->
+<servlet>
+  	<servlet-name>Hello</servlet-name> <!-- Alias -->
+  	<servlet-class>HelloWorld</servlet-class> <!-- Class_Name -->
+</servlet>
+```
+
+`<servlet-mapping>`태그를 사용하여 서블릿과 URL을 매핑
+
+```yaml
+<!-- 서블릿 URL 연결 -->
+<servlet-mapping>
+	<servlet-name>Hello</servlet-name> 
+	<url-pattern>/Hello</url-pattern>
+</servlet-mapping>
+```
+
+## 서블릿 구동 절차
+1. 클라이언트 요청이 들어오면 서블릿 컨테이너는 서블릿을 찾음
+2. 서블릿이 없다면, 서블릿 클래스를 로딩하고 인스턴스를 준비 후 생성자를 호출. 그리고 서블릿 초기화 메서드인 `init()`를 호출
+3. 클라이언트 요청을 처리하는 `service()`호출.
+4. `service()`에서 만든 결과를 HTTP 프로토콜에 맞추어 클라이언트에 응답
+5. 서블릿 컨테이너를 종료하거나, 웹 애플리케이션을 종료 한다면, 서블릿 컨테이너는 종료되기 전에 생성된 모든 서블릿에 대해 `destroy()`호출
+
+## Welcome File
+**디렉토리의 기본 웹 페이지**  
+`web.xml`의 `<welcom-file-list>` 태그를 사용하여 설정  
+이 태그의 하위 태그인 `<welcome-file>`에 웰컴 파일의 이름을 적어 넣어서 등록  
+웰컴 파일이 여러 개인 경우, `<welcom-file-list>`태그에 선언된 순서대로 찾음
+
+## GenericServlet
+서블릿 클래스가 필요로 하는 `init(), destroy(), getServletConfig(), getServletInfo()`를 미리 구현하여 상속  
+서블릿을 만들 때 `GenericServlet`을 상속받는다면 `service()`만 구현하면 됨
+
+`service()`의 매개변수 중에서 `ServletRequest`객체는 클라이언트의 요청 정보를 다룰 때 사용  
+그 중 `getParameter()`는 `GET`이나 `POST` 요청으로 들어온 매개변수 값을 꺼낼 때 사용
+> request.getParameter("a");
+
+`ServletResponse` 객체는 응답과 관련된 기능 제공  
+`setContentType()`으로 출력할 데이터의 인코딩 형식과 문자 집합을 지정.  
+> response.setContentType("text/plain");  
+> 출력할 데이터가 텍스트이고 별도의 메타정보가 없음
+
+`setCharacterEncoding()`은 출력할 데이터의 문자 집합을 지정.  
+기본값은 `ISO-8859-1`  
+> response.setCharacterEncoding("UTF-8");  
+> 데이터를 출력할 때 유니코드 값을 `UTF-8` 형식으로 변환
+
+`getWriter()`는 출력 스트림 객체를 반환. 이미지나 동영상과 같은 바이너리 데이터를 출력할 때는 `getOutputStream()`을 사용
+> PrintWriter writer = response.getWriter();  
+> `getWriter()`를 호출하기 전에 `setContentType()`나 `setCharacterEncoding()`을 먼저 호출
+
+Servlet3.0 사양부터 `@WebServlet` 애노테이션을 사용하여 서블릿 배치 정보 작성 가능
+서블릿의 URL 정보를 `@WebServlet`의 괄호 안에 기술
+> @WebServlet("/url")
