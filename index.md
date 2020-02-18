@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/server.jpg"
 excerpt: >
- TaeHee's Blog<br />
+ Become Dev-Blog<br />
 
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png

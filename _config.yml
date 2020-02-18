@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "TH-Blog"
 title_separator          : "-"
 name                     : &name "TaeHee-Park"
-description              : "Dev-Blog"
+description              : &description "Dev-Blog"
 url                      : "https://pth41.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : "" # the subpath of your site, e.g.
 repository               : "pth41/pth41.github.io" # GitHub username/repo-name e.g.
