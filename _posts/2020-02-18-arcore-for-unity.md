@@ -15,14 +15,14 @@ toc: true
 ## 개발 환경 준비
 - 무료버전 유니티 다운로드 [Unity](https://store.unity.com/kr/download?ref=personal)  
 
-<img src="/assets/images/arcore/1.jpg" width="500px" height="400px" title="Terms" alt="Terms">  
+<img src="/assets/images/arcore/1.JPG" width="500px" height="400px" title="Terms" alt="Terms">  
 
 - ARCore SDK for Unity 다운로드 [ARCore SDK for Unity](https://github.com/google-ar/arcore-unity-sdk/releases)
 
 ## ARCore를 사용할 프로젝트 생성  
 새로운 유니티 프로젝트 생성  
   
-<img src="/assets/images/arcore/2.jpg" width="600px" height="500px" title="Create_Project" alt="Create_Project">  
+<img src="/assets/images/arcore/2.JPG" width="600px" height="500px" title="Create_Project" alt="Create_Project">  
   
 <br>
 - 다운받은 ARCore sdk unitypackage를 실행하여 Import  
@@ -44,12 +44,12 @@ toc: true
 - Package Name 정하기
 - Minimum, Target API 7.0 ‘Nougat’ 이상  
   
-<img src="/assets/images/arcore/3.jpg" width="400px" height="300px" title="PlayerSettings1" alt="PlayerSettings1">  
+<img src="/assets/images/arcore/3.JPG" width="400px" height="300px" title="PlayerSettings1" alt="PlayerSettings1">  
   
 <br>
 - XR Settings에서 ARCore Supported 체크  
   
-<img src="/assets/images/arcore/4.jpg" width="400px" height="300px" title="PlayerSettings2" alt="PlayerSettings2">  
+<img src="/assets/images/arcore/4.JPG" width="400px" height="300px" title="PlayerSettings2" alt="PlayerSettings2">  
   
 <br>
 ## 그 외
@@ -68,7 +68,7 @@ toc: true
 프로젝트가 준비되었으니 샘플 앱을 실행해보자
 - Assets > GoogleARCore > Examples > HelloAR > Scenes > HelloAR 열기  
 
-<img src="/assets/images/arcore/rud.jpg" width="500px" height="400px" title="Open_HelloAR" alt="Open_HelloAR">  
+<img src="/assets/images/arcore/rud.JPG" width="500px" height="400px" title="Open_HelloAR" alt="Open_HelloAR">  
 <br>
 - Add Open Scenes
 - Build And Run  
@@ -113,7 +113,7 @@ toc: true
   
 <br>
 
-<img src="/assets/images/arcore/5.jpg" width="400px" height="300px" title="prefab" alt="prefab">  
+<img src="/assets/images/arcore/5.JPG" width="400px" height="300px" title="prefab" alt="prefab">  
   
 <br>
 ## Environmental Light 사용
